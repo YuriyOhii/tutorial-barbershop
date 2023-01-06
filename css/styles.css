@@ -17,7 +17,19 @@ body {
 } 
 .list {
     list-style: none;
-}   
+}  
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
 /* --------HEADER--------- */
 
 .header {
@@ -273,5 +285,143 @@ line-height: 1.67;
 letter-spacing: 0.02em;
 
 color: var(--text-color);
+}
+
+/* ---------OUR BARBERS----------- */
+.barbers {
+}
+.barbers-pre-title {
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+
+color: var(--headline-color);
+}
+.barbers-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--headline-color);
+}
+.barbers-card-list {
+}
+.barbers-card {
+}
+.barbers-card-name {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.39;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--headline-color);
+}
+.barbers-card-desc {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--contrast-color);
 
 }
+.barbers-socials-list {
+}
+.barbers-socials-item {
+}
+
+/* --------OUR WORKS--------- */
+.works {
+}
+.works-pre-title {
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+
+color: var(--headline-color);
+}
+.works-list {
+}
+.list {
+}
+.works-item {
+}
+
+/* ------------ONLINE-BOOKING----------- */
+
+/* ------------CONTACTS----------------- */
+.contacts {
+    background-color: aquamarine;
+
+}
+.contacts-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--headline-on-dark-color);
+}
+.contacts-address {
+}
+.contacts-list {
+}
+.contacts-item .link{
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--after-title-color);
+}
+.contacts-item [rel] {
+font-weight: 700;
+}
+.mail {
+text-decoration-line: underline;
+}
+
+.contacts-text {
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+
+color: var(--headline-on-dark-color);
+}
+.contacts-workingtime {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing:  0.02em;
+
+color: var(--after-title-color);
+}
+
+/* --------FOOTER--------- */
+.footer {
+}
+.footer-copyright {
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+
+color: var(--after-title-color);
+}
+.footer-list {
+}
+.footer-item .link {
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+
+color: var(--headline-color);
+}
+
