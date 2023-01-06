@@ -1,0 +1,277 @@
+
+:root {
+    --header-color: #ffffff;
+    --contrast-color: #FF6C00;
+    --headline-color: #303030;
+    --headline-on-dark-color: #ffffff; 
+    --after-title-color: #9DA4BD;
+    --text-color: #555555;
+    --text-on-dark-color: rgba(157, 164, 189, 0.6);
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    }
+.link {
+    text-decoration: none;
+} 
+.list {
+    list-style: none;
+}   
+/* --------HEADER--------- */
+
+.header {
+background-color: teal;
+}
+.navigation {
+}
+.logo {
+}
+.navigation-list {
+}
+.navigation-item .link {
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+
+color: var(--header-color);
+}
+
+.navigation-item .link:hover,
+.navigation-item .link:focus {
+    color: var(--contrast-color);
+}
+
+.tel {
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: var(--header-color);
+}
+
+.tel:hover,
+.tel:focus {
+    color: var(--contrast-color);
+}
+
+.header .btn {
+font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+
+color: var(--header-color);
+background-color: aquamarine;
+}
+
+header .btn:hover,
+header .btn:focus {
+    background-color: var(--contrast-color);
+    cursor: pointer;
+}
+
+/* ------------HERO------------- */
+.hero {
+    background-color:coral;
+}
+.hero-list {
+}
+.hero-item .link{
+
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+
+color: var(--headline-color);
+}
+.hero-item .link:hover,
+.hero-item .link:focus {
+    color: var(--contrast-color);
+}
+.hero-main-title {
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+
+color: var(--text-on-dark-color);
+}
+.hero-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 1.18;
+letter-spacing: 0.05em;
+
+color: var(--headline-on-dark-color);
+}
+.after-title {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--after-title-color);
+}
+.hero-scroll-list {
+}
+.hero-scroll-item .link {
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+
+color: var(--text-on-dark-color);
+}
+/* --------ABOUT US----------- */
+.about {
+}
+.about-pre-title {
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+
+color: var(--headline-color);
+}
+.about-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--headline-color);
+
+}
+.about-after-title {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--text-color);
+}
+.about-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+
+color: var(--text-color);
+}
+.about-btn {
+font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+
+color: var(--headline-color);
+}
+
+.about-btn:hover,
+.about-btn:focus {
+background-color: var(--contrast-color);
+color: var(--headline-on-dark-color);
+cursor: pointer;
+}
+
+/* ------PRICES-------- */
+.prices {
+    background-color: brown;
+}
+.prices-pre-title {
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+
+color: var(--text-on-dark-color);
+}
+.prices-title {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--headline-on-dark-color);
+
+}
+.prices-list {
+}
+.prices-item {
+}
+.prices-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--after-title-color)
+}
+.prices-btn {
+font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+
+color: var(--headline-on-dark-color);
+}
+
+/* ---------WHY WE?-------- */
+
+.why {
+}
+.why-list {
+}
+.why-item {
+}
+.why-digit {
+font-weight: 700;
+font-size: 42px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: var(--headline-color);
+}
+.why-text {
+font-size: 11px;
+line-height: 15px;
+text-align: center;
+
+color: var(--headline-color)
+}
+.why-pre-title {
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+
+color: var(--headline-color);
+}
+.why-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--headline-color);
+}
+.why-after-title {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--text-color);
+
+}
