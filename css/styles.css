@@ -596,7 +596,13 @@ padding-left: 100px;
 }
 
 /* --------FOOTER--------- */
-.footer {
+.footer {padding-top: 56px;
+    padding-bottom: 56px;
+}
+.footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer-copyright {
   font-size: 11px;
@@ -606,6 +612,8 @@ padding-left: 100px;
   color: var(--after-title-color);
 }
 .footer-list {
+    display: flex;
+    gap: 40px;
 }
 .footer-item .link {
   font-size: 12px;
