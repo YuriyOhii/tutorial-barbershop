@@ -19,14 +19,19 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media-mobile.css" />
+    <link rel="stylesheet" href="./css/media-tablet.css" />
+    <link rel="stylesheet" href="./css/media-desktop.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="link logo" href="./index.html"
-            ><img src="./images/Logo.svg" alt="Barbershop's Logo"
-          /></a>
+          <a class="link logo" href="./index.html">
+            <svg class="header-logo-icon" width="69" height="55">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
           <ul class="navigation-list list">
             <li class="navigation-item">
               <a class="link" href="#about">About</a>
@@ -41,14 +46,66 @@
               <a class="link" href="#contacts">Contacts</a>
             </li>
           </ul>
+          <button class="mobile-menu-btn" type="button" data-menu-open>
+            <svg class="mobile-menu-icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu_btn"></use>
+            </svg>
+          </button>
         </nav>
-        <a href="tel:+380441111111" class="link tel">+38 044 111 11 11</a>
-        <button type="button" class="btn button">Online-booking</button>
+        <div class="mobile-menu-box" data-menu>
+           <button class="menu-box-close-btn" type="button" data-menu-close>
+            <svg class="menu-box-close-icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-box-navigation-list list">
+            <li class="navigation-item">
+              <a class="link" href="#about">About</a>
+            </li>
+            <li class="navigation-item">
+              <a class="link" href="#prices">Services and prices</a>
+            </li>
+            <li class="navigation-item">
+              <a class="link" href="#barbers">Barbers</a>
+            </li>
+            <li class="navigation-item">
+              <a class="link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <a href="tel:+380441111111" class="link menu-box-tel"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="menu-box-btn button">Online-booking</button>
+         <ul class="list menu-box-instatube-list">
+            <li class="menu-box-instatube-item">
+              <a
+                class="link"
+                href=""
+                target="_blank"
+                rel="noopener norefferer nofollow"
+                >Youtube</a
+              >
+            </li>
+            <li class="menu-box-instatube-item">
+              <a
+                class="link"
+                href=""
+                target="_blank"
+                rel="noopener norefferer nofollow"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="tel:+380441111111" class="link header-tel"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="header-btn button">Online-booking</button>
       </div>
     </header>
     <!-- HERO -->
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <ul class="list hero-list">
             <li class="hero-item">
@@ -87,9 +144,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- About us   -->
-      <section class="about" id="about">
+      <!-- <section class="about" id="about">
         <div class="container">
           <img
             src="./images/about-one.jpg"
@@ -120,9 +177,9 @@
             <button class="about-btn button" type="button">Online-booking</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Our services and prices -->
-      <section class="prices" id="prices">
+      <!-- <section class="prices" id="prices">
         <div class="container">
           <p class="prices-pre-title pre-title">Spend your time with the best masters</p>
           <h2 class="prices-title title">Services and prices</h2>
@@ -167,9 +224,9 @@
 
           <button class="prices-btn button" type="button">Online-booking</button>
         </div>
-      </section>
+      </section> -->
       <!-- Why we -->
-      <section class="why">
+      <!-- <section class="why">
         <div class="container">
           <ul class="why-list list">
             <li class="why-item">
@@ -198,9 +255,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Our barbers -->
-      <section class="barbers" id="barbers">
+      <!-- <section class="barbers" id="barbers">
         <div class="container">
           <p class="barbers-pre-title pre-title">For true enjoyers of the atmosphere</p>
           <h2 class="barbers-title title">Our barbers</h2>
@@ -279,11 +336,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our works -->
-      <section class="works">
+      <!-- The headline will be hidden -->
+      <!-- <section class="works">
         <div class="container">
-          <!-- The headline will be hidden -->
+          
           <p class="works-pre-title pre-title">In Latin, "barba" means "beard"</p>
           <h2 class=".visually-hidden">Our portfolio</h2>
           <ul class="works-list list">
@@ -322,15 +380,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- FORM and CONTACTS -->
-      <section class="form-contacts">
+      <!-- <section class="form-contacts">
         <div class="container ">
           <section class="form">
             <h2 class="form-title title">Online-booking</h2>
-          </section>
-          <!-- CONTACTS -->
-          <section class="contacts" id="contacts">
+          </section> -->
+      <!-- CONTACTS -->
+      <!-- <section class="contacts" id="contacts">
             <h2 class="contacts-title title">Contacts</h2>
             <address class="contacts-address">
               <ul class="contacts-list list">
@@ -356,10 +414,10 @@
             <p class="contacts-workingtime after-title">Every day from 9:00 to 22:00</p>
           </section>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <span class="footer-copyright"> &copy;Copyright 2020 </span>
       <ul class="footer-list list">
@@ -383,6 +441,7 @@
         </li>
       </ul>
       </div>
-    </footer>
+    </footer> -->
+  <script src="./JS/mobile-menu.js"></script>
   </body>
 </html>
