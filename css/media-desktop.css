@@ -1,0 +1,26 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* --------------HEADER------------- */
+  .header {
+    padding-left: 0;
+    padding-right: 17px;
+  }
+  .navigation {
+    gap: 131px;
+  }
+  .navigation-list {
+    gap: 30px;
+  }
+  .tel-btn-wrap {
+    display: flex;
+    gap: 43px;
+    align-items: center;
+  }
+  .header-tel {
+    position: static;
+  }
+}

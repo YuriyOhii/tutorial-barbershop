@@ -1,12 +1,79 @@
-@media screen and (min-width: 768px) {
-  .navigation {
-  display: flex;
-  align-items: center;
-}  
-.navigation-list {
-  display: flex;
-  gap: 30px;
+:root {
+  --header-color: #ffffff;
+  --contrast-color: #ff6c00;
+  --headline-color: #303030;
+  --headline-on-dark-color: #ffffff;
+  --after-title-color: #9da4bd;
+  --text-color: #555555;
+  --text-on-dark-color: rgba(157, 164, 189, 0.6);
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  /* --------------HEADER------------- */
+  .header {
+    padding: 32px 0 32px 11px;
+  }
+  .mobile-menu-btn,
+  .mobile-menu-box {
+    display: none;
+  }
+  .header > .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation-list,
+  .header-tel,
+  .header-btn {
+    display: block;
+  }
+  .navigation {
+    gap: 59px;
+  }
+  .navigation-list {
+    display: flex;
+    gap: 20px;
+  }
+  .navigation-item {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: var(--header-color);
+  }
+  .header-btn {
+    color: var(--header-color);
+    transition: background-color 250ms;
+  }
+  .header-btn:hover,
+  .header-btn:focus {
+    background-color: var(--contrast-color);
+  }
+  .header-tel {
+    position: absolute;
+    top: 68px;
+    right: 58px;
+
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    transition: color 250ms;
+  }
+  .header-tel:hover,
+  .header-tel:focus {
+    color: var(--contrast-color);
+  }
+
+  /*  
+
 .header > .container {
   display: flex;
   align-items: center;
@@ -49,6 +116,48 @@ header-btn:hover,
 header-btn:focus {
   background-color: var(--contrast-color);
   cursor: pointer;
+} */
+  /* .header > .container {
+  display: flex;
+  align-items: center;
 }
-    
+.navigation-item .link {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--header-color);
+}
+
+.navigation-item .link:hover,
+.navigation-item .link:focus {
+  color: var(--contrast-color);
+}
+
+.tel {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--header-color);
+
+  margin-right: 43px;
+  margin-left: auto;
+}
+
+.tel:hover,
+.tel:focus {
+  color: var(--contrast-color);
+}
+
+.header .btn {
+  color: var(--header-color);
+  }
+
+header .btn:hover,
+header .btn:focus {
+  background-color: var(--contrast-color);
+  cursor: pointer;
+} */
 }

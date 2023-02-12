@@ -29,6 +29,7 @@ p {
 }
 .link {
   text-decoration: none;
+  color: inherit;
 }
 .list {
   list-style: none;
@@ -81,7 +82,7 @@ p {
   background-color: transparent;
   min-width: 160px;
   min-height: 40px;
-  border: 1px solid #ff6c00;
+  border: 1px solid var(--contrast-color);
   border-radius: 25px;
 }
 
@@ -120,72 +121,83 @@ p {
   top: 0;
   right: 0;
 
+  padding: 48px 31px 0 40px;
+
   width: 70%;
   background-color: #ffffff;
 }
-.menu-box-close-icon {
-}
-.menu-box-navigation-list {
-}
-.list {
-}
-.navigation-item {
-}
-.link {
-}
-.menu-box-tel {
-}
-.menu-box-btn {
-}
-.button {
-}
-.menu-box-instatube-list {
-}
-.menu-box-instatube-item {
-}
-/* .header > .container {
-  display: flex;
-  align-items: center;
-}
-.navigation-item .link {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-
-  color: var(--header-color);
-}
-
-.navigation-item .link:hover,
-.navigation-item .link:focus {
-  color: var(--contrast-color);
-}
-
-.tel {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--header-color);
-
-  margin-right: 43px;
+.menu-box-close-btn {
   margin-left: auto;
 }
+.menu-box-navigation-list {
+  margin-bottom: 64px;
+}
 
-.tel:hover,
-.tel:focus {
+.navigation-item > .link {
+  transition: color 250ms;
+}
+.navigation-item > .link:hover,
+.navigation-item > .link:focus {
   color: var(--contrast-color);
 }
 
-.header .btn {
-  color: var(--header-color);
-  }
 
-header .btn:hover,
-header .btn:focus {
+.menu-box-tel {
+  display: block;
+margin-bottom: 24px;
+
+font-size: 18px;
+line-height: 1.39;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color:var(--headline-color);
+}
+.menu-box-tel:hover,
+  .menu-box-tel:focus {
+    color: var(--contrast-color);
+  }
+.menu-box-btn {
+  margin-bottom: 64px;
+  transition: color 250ms, backgroundcolor 250ms;  
+}
+.menu-box-btn:hover,
+.menu-box-btn:focus {
+  color: var(--header-color);
   background-color: var(--contrast-color);
-  cursor: pointer;
-} */
+}
+.menu-box-instatube-list {
+margin-left: 80px;
+font-size: 14px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+
+color: var(--headline-color);
+}
+.menu-box-instatube-item > .link {
+  transition: color 250ms;
+}
+.menu-box-instatube-item > .link:hover,
+.menu-box-instatube-item > .link:focus {
+  color: var(--contrast-color);
+}
+.menu-box-instatube-item:first-child {
+  position: relative;
+  margin-bottom: 24px;
+}
+.menu-box-instatube-item:first-child::before {
+position: absolute;
+top: 10px;
+left: -80px;
+
+display: block;
+content: '';
+width: 40px;
+height: 1px;
+
+background-color: var(--headline-color);
+}
+
 
 /* ------------HERO------------- */
 .hero {

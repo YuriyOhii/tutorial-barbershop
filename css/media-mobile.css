@@ -1,0 +1,23 @@
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:767px) {
+    .navigation-item {
+margin-top: 24px;
+
+font-size: 18px;
+line-height: 1.39;
+letter-spacing: 0.1em;
+
+color: var(--headline-color);
+}
+.navigation-item:first-child {
+  color: var(--contrast-color);
+  margin-top: 0;
+}
+    
+}
