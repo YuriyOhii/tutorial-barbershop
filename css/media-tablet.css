@@ -24,7 +24,7 @@
   .header > .container {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    gap: 43px;
     align-items: center;
   }
   .navigation-list,
@@ -57,7 +57,7 @@
   .header-tel {
     position: absolute;
     top: 68px;
-    right: 58px;
+    right: 65px;
 
     font-size: 12px;
     line-height: 1.33;
@@ -71,93 +71,88 @@
   .header-tel:focus {
     color: var(--contrast-color);
   }
+  /* ---------------HERO----------------- */
+  .hero {
+    background-image: none;
+  }
+  .hero > .container {
+    display: flex;
+  }
+  .header-logo-icon {
+    fill: var(--headline-color);
+  }
+  .hero-list,
+  .hero-scroll-list {
+    display: block;
+  }
+  .hero-instatube-list {
+    width: 117px;
+  }
+  .hero-instatube-item {
+    
+  }
+  .hero-instatube-item .link {
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
 
-  /*  
-
-.header > .container {
-  display: flex;
-  align-items: center;
-}
-.navigation-item .link {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-
-  color: var(--header-color);
-}
-
-.navigation-item .link:hover,
-.navigation-item .link:focus {
-  color: var(--contrast-color);
-}
-
-.header-tel {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--header-color);
-
-  margin-right: 43px;
-  margin-left: auto;
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--contrast-color);
-}
-
-.header-btn {
-  color: var(--header-color);
+    color: var(--headline-color);
+    transition: color 250ms;
+  }
+  .hero-instatube-item .link:hover,
+  .hero-instatube-item .link:focus {
+    color: var(--contrast-color);
   }
 
-header-btn:hover,
-header-btn:focus {
-  background-color: var(--contrast-color);
-  cursor: pointer;
+  .hero-wrap {
+    background-color: gray;
+    flex-grow: 1;
+    padding: 272px 114px 237px 98px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url("../images/hero/tablet-hero-574_680.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpx) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("../images/hero/tablet-hero-1147_1360.jpg");
+    }
+  }
+  .after-title {
+    font-size: 18px;
+  }
+  /* .hero-item .link {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--headline-color);
+}
+.hero-item .link:hover,
+.hero-item .link:focus {
+  color: var(--contrast-color);
 } */
-  /* .header > .container {
+  /* .hero-scroll-list {
+  margin-top: 144px;
   display: flex;
-  align-items: center;
+  gap: 24px;
+  flex-direction: row-reverse;
 }
-.navigation-item .link {
-  font-size: 12px;
-  line-height: 1.33;
+.hero-scroll-item .link {
+  font-size: 11px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
 
-  color: var(--header-color);
-}
-
-.navigation-item .link:hover,
-.navigation-item .link:focus {
-  color: var(--contrast-color);
-}
-
-.tel {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--header-color);
-
-  margin-right: 43px;
-  margin-left: auto;
-}
-
-.tel:hover,
-.tel:focus {
-  color: var(--contrast-color);
-}
-
-.header .btn {
-  color: var(--header-color);
-  }
-
-header .btn:hover,
-header .btn:focus {
-  background-color: var(--contrast-color);
-  cursor: pointer;
+  color: var(--text-on-dark-color);
 } */
 }
