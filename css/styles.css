@@ -48,11 +48,11 @@ p {
   margin: -1px;
 }
 .container {
-  width: 480px;
+  width: 100%;
   padding-left: 31px;
   padding-right: 31px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;  
 }
 .title {
   font-family: "Raleway";
@@ -86,6 +86,9 @@ p {
   min-height: 40px;
   border: 1px solid var(--contrast-color);
   border-radius: 25px;
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 /* --------HEADER--------- */
@@ -123,17 +126,20 @@ p {
   margin: auto;
 }
 .mobile-menu-box {
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 0;
+ right: 0;
 
-  padding: 48px 31px 40px 40px;
+  padding: 118px 30px 40px 40px;
 
   width: 70%;
+  height: 100vh;
   background-color: #ffffff;
-}
-.menu-box-close-btn {
-  margin-left: auto;
+   }
+ .menu-box-close-btn {
+  position: absolute;
+  top: 48px;
+  left: 67%;
 }
 .menu-box-navigation-list {
   margin-bottom: 64px;
@@ -226,8 +232,8 @@ p {
       url("../images/hero/mob-hero-960_1160.jpg");
   }
 }
-.hero-list,
-.hero-scroll-list {
+.hero-instatube-list,
+.hero-slide-controls-list {
   display: none;
 }
 .hero-main-title {

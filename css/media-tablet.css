@@ -15,7 +15,7 @@
   }
   /* --------------HEADER------------- */
   .header {
-    padding: 32px 0 32px 11px;
+    padding: 32px 0;
   }
   .mobile-menu-btn,
   .mobile-menu-box {
@@ -24,13 +24,17 @@
   .header > .container {
     position: relative;
     display: flex;
-    gap: 43px;
+    justify-content: space-between;
     align-items: center;
   }
   .navigation-list,
   .header-tel,
   .header-btn {
     display: block;
+  }
+  .header-logo-icon {
+    fill: var(--headline-color);
+    margin-left: 11px;
   }
   .navigation {
     gap: 59px;
@@ -78,18 +82,28 @@
   .hero > .container {
     display: flex;
   }
-  .header-logo-icon {
-    fill: var(--headline-color);
-  }
-  .hero-list,
-  .hero-scroll-list {
+  .hero-instatube-list,
+  .hero-slide-controls-list {
     display: block;
   }
   .hero-instatube-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 80px;
     width: 117px;
   }
+  .hero-instatube-item:first-child::before {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--headline-color);
+  }
   .hero-instatube-item {
-    
+    transform: rotateZ(270deg);
+    transform-origin: top left ;
   }
   .hero-instatube-item .link {
     font-size: 11px;
